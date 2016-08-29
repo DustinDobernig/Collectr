@@ -1,19 +1,22 @@
-# Build and Release Folders
-bin/
-bin-debug/
-bin-release/
-[Oo]bj/ # FlashDevelop obj
-[Bb]in/ # FlashDevelop bin
 
-# Other files and folders
-.settings/
+# Created by https://www.gitignore.io/api/windows
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk

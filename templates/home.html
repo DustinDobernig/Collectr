@@ -1,0 +1,31 @@
+<h1>{{ title }}</h1>
+
+
+{% block content %}
+ {% if request.user.is_authenticated%}
+    <form method='POST' action=''>{% csrf_token %}
+     <label for="{{ form.redirect_uri.id_for_label }}">Redirect URI:</label>
+     {{ form.redirect_uri }}
+     <input type='checkbox' name="redirect_choice" value='redirect_choice' /> redirect enabled
+     <p></p>
+     <input type='submit' value='Create Campaign' />
+     
+     <p></p>
+     
+     {{ message }}
+     
+     <p></p>
+    
+ 
+     {% if queryset %}
+     
+     {% for instance in queryset %}
+     
+        <a href="{{ instance.slug }}">crescendr.com/{{ instance.slug }}</a> | {{ instance.redirect_uri }} </br>
+        
+     {% endfor %}
+     
+     {% endif %}
+ {% endif %}
+ {% endblock %}
+</form>
